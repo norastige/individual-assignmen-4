@@ -1,0 +1,427 @@
+/* ----------------------------------------- */
+/* Button */
+.button__component-states {
+  width: 120px;
+  height: 60px;
+  border-radius: 30px;
+  border: 2px solid var(--text-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: var(--font-size-base);
+  color: var(--color-background);
+  background-color: var(--text-color);
+}
+
+.button__component-states-hover:hover {
+  scale: 103%;
+  cursor: pointer;
+}
+
+.button__component-states-disabled {
+  opacity: 90%;
+  cursor: not-allowed;
+}
+
+/* ----------------------------------------- */
+/* Accordion */
+.accordion__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid palevioletred; */
+}
+
+.accordion__container p {
+  line-height: var(--spacing-large);
+  color: var(--text-color);
+}
+
+.accordion {
+  width: 50%;
+  height: auto;
+}
+
+.accordion__title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-small);
+  cursor: pointer;
+  background-color: var(--color-secondary);
+  color: var(--text-color);
+}
+
+.accordion__toggle-button {
+  padding: var(--spacing-small);
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: var(--text-color);
+}
+
+.accordion__description-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s ease;
+  padding: 0 var(--spacing-small);
+  background-color: var(--color-background);
+  border: 4px solid var(--color-secondary);
+}
+
+.accordion__description-container--active {
+  max-height: 50px;
+}
+
+.rotate-arrow {
+  transform: rotate(180deg);
+}
+
+.accordion__disabled--state {
+  cursor: not-allowed;
+}
+
+.accordion__title-container-disabled {
+  opacity: 0.5;
+  max-height: 50px;
+  pointer-events: none;
+}
+
+/* ------------- */
+/* Checkbox Component*/
+.component__states-container-checkbox {
+  width: 100%;
+  height: 100%;
+}
+
+.checkbox__component {
+  width: 50%;
+  height: 100%;
+}
+
+.checkbox__input {
+  height: 30px;
+  width: 30px;
+  cursor: default;
+}
+
+.checkbox__input--hover:hover {
+  cursor: pointer;
+}
+
+.checkbox__component--disabled {
+  cursor: not-allowed;
+}
+
+.checkbox__input--disabled {
+  pointer-events: none;
+}
+
+/* -------------------------- */
+/* Navbar Component */
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: var(--text-color);
+  padding: var(--spacing-medium) var(--spacing-medium);
+  font-family: Syne;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.navbar__logo-container {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__logo {
+  width: 80px;
+}
+
+.navbar__links-container {
+  flex-grow: 1;
+}
+
+.navbar__links {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-medium);
+}
+
+.navbar__links a {
+  color: var(--text-color);
+  font-size: var(--font-size-base);
+}
+
+.navbar__links-hover a:hover {
+  color: var(--color-primary);
+}
+
+/* ---------------- */
+/* Card Component */
+.card__component {
+  width: 50%;
+  height: 100%;
+  border: 4px solid var(--color-secondary);
+  border-radius: 16px;
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__component-content {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__component-content h3 {
+  padding-top: 0;
+}
+
+.card__component-content p {
+  font-size: var(--font-size-base);
+}
+
+.card__component--hover:hover {
+  cursor: pointer;
+  border: 4px solid var(--text-color);
+}
+
+/* -------------------- */
+/* Picture Component */
+
+.component__states-container-img {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 100%;
+}
+
+.picture__component {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-medium);
+}
+
+.picture__component img {
+  width: 80%;
+  height: 70%;
+  border-radius: 10px;
+}
+
+.picture__component .caption {
+  display: none;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  padding-top: var(--spacing-small);
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.picture__component--hover:hover .caption {
+  display: block;
+}
+
+.picture__component--hover img:hover {
+  cursor: pointer;
+}
+
+/* ------------- */
+/* Text Area Component*/
+.component__states-container-text {
+  width: 100%;
+  height: 100%;
+}
+
+.text__component {
+  width: 50%;
+  height: 100%;
+}
+
+.text__input {
+  height: 40px;
+  width: 120px;
+  border-radius: 20px;
+  border: 2.5px solid var(--text-color);
+  padding: var(--spacing-medium);
+  cursor: default;
+}
+
+.text__input--hover:hover {
+  border-color: var(--color-primary);
+  cursor: text;
+}
+
+.text__input--disabled {
+  cursor: not-allowed;
+  background-color: rgb(229, 229, 229);
+  border-color: rgb(151, 151, 151);
+}
+
+/* ---------------- */
+/* Switch Component */
+.switch__component {
+  height: 70%;
+  width: 100%;
+}
+
+.switch__component--container {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.switch__component--button {
+  background-color: var(--color-tertiary);
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  border-radius: 70px;
+  position: relative;
+  transition: 0.2s;
+}
+
+.switch__component--button::before {
+  position: absolute;
+  background-color: white;
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 5px;
+  transition: transform 0.2s ease;
+}
+
+/* Default */
+input#check-default:checked + .switch__component--button {
+  background-color: var(--color-primary);
+}
+
+input#check-default:checked + .switch__component--button::before {
+  transform: translateX(50px);
+}
+
+/* Hover*/
+.switch__component--hover .switch__component--button:hover {
+  background-color: var(--color-secondary);
+}
+
+input#check-hover:checked + .switch__component--button {
+  background-color: var(--color-primary);
+}
+
+input#check-hover:checked + .switch__component--button::before {
+  transform: translateX(50px);
+}
+
+.switch__component--container input {
+  display: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .accordion {
+    width: 80%;
+    height: auto;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar__logo {
+    width: 60px;
+  }
+
+  .navbar__links {
+    gap: var(--spacing-small);
+  }
+
+  .card__component {
+    width: 70%;
+  }
+
+  .picture__component {
+    width: 100%;
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .accordion {
+    width: 100%;
+    height: auto;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 70px;
+    padding: var(--spacing-small) var(--spacing-small);
+  }
+
+  .navbar__logo {
+    width: 40px;
+  }
+
+  .navbar__links {
+    gap: var(--spacing-medium);
+  }
+
+  .navbar__links a {
+    color: var(--text-color);
+    font-size: var(--font-size-media);
+  }
+
+  .card__component {
+    width: 100%;
+  }
+
+  .picture__component {
+    width: 100%;
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .navbar {
+    width: 100%;
+    height: 70px;
+    padding: var(--spacing-small) var(--spacing-small);
+  }
+
+  .navbar__logo {
+    width: 30px;
+  }
+
+  .navbar__links {
+    gap: var(--spacing-small);
+  }
+
+  .card__component {
+    width: 100%;
+  }
+
+  .picture__component {
+    width: 100%;
+    height: 60%;
+  }
+}

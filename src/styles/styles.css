@@ -1,0 +1,229 @@
+@font-face {
+  font-family: Syne;
+  src: url(../assets/fonts/Syne.ttf);
+}
+
+body {
+  width: 100%;
+  min-width: 340px;
+  height: 100vh;
+  font-family: Syne;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: var(--font-size-xlarge);
+  line-height: var(--spacing-xlarge);
+}
+
+p {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  line-height: var(--spacing-large);
+}
+
+h3 {
+  font-size: var(--font-size-medium);
+  line-height: var(--spacing-large);
+  padding-top: var(--spacing-xlarge);
+}
+
+.tabs {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+}
+
+.tabs__title-container {
+  width: 20%;
+  min-width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs__title {
+  flex-basis: 12.5%;
+  padding: var(--spacing-medium);
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  font-size: var(--font-size-base);
+  font-weight: 650;
+  background-color: var(--color-secondary);
+  color: var(--text-color);
+}
+
+.tabs__title-active {
+  background-color: var(--color-background);
+}
+
+.tabs__content-container {
+  width: 80%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-xlarge);
+  background-color: var(--color-background);
+}
+
+.tabs__content {
+  display: none;
+  visibility: hidden;
+}
+
+.tabs__content-active {
+  visibility: visible;
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  background-color: var(--color-background);
+}
+
+.tabs__component-container {
+  width: 100%;
+  height: 30%;
+  color: var(--text-color);
+}
+
+.tabs__component-states {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.component__states-container {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: var(--spacing-large);
+  align-items: left;
+  color: var(--text-color);
+}
+
+.component__states-container p {
+  line-height: var(--spacing-large);
+}
+
+/* Media Queries */
+/* Media Queries Tablet */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: var(--font-size-large);
+    line-height: var(--spacing-large);
+  }
+
+  .tabs__title-container {
+    width: 25%;
+    min-width: 25%;
+  }
+
+  .component__states-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .tabs__title {
+    padding: var(--spacing-small);
+    font-size: var(--font-size-media);
+  }
+
+  h1 {
+    font-size: var(--font-size-medium);
+    line-height: var(--spacing-medium);
+  }
+
+  h3 {
+    font-size: var(--font-size-base);
+    line-height: var(--spacing-large);
+    padding-top: var(--spacing-medium);
+  }
+
+  p {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    line-height: var(--spacing-medium);
+    padding-top: var(--spacing-medium);
+  }
+
+  .tabs__content-container {
+    padding: var(--spacing-large);
+  }
+
+  .tabs__component-container {
+    width: 100%;
+    height: 30%;
+    color: var(--text-color);
+  }
+
+  .tabs__component-states {
+    width: 100%;
+    height: 50%;
+  }
+
+  .component__states-container {
+    width: 100%;
+    height: 100%;
+    padding-top: var(--spacing-small);
+  }
+
+  .component__states-container p {
+    line-height: var(--spacing-large);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .tabs__title {
+    padding: var(--spacing-small);
+    font-size: var(--font-size-media);
+  }
+
+  p {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    line-height: var(--spacing-medium);
+    padding-top: var(--spacing-medium);
+  }
+
+  .tabs {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .tabs__title-container {
+    width: 30%;
+    min-width: 30%;
+  }
+
+  .tabs__title {
+    padding: var(--spacing-small);
+  }
+
+  .tabs__content-container {
+    padding: var(--spacing-xlarge) var(--spacing-large);
+  }
+
+  .tabs__component-container {
+    width: 100%;
+    height: 30%;
+    color: var(--text-color);
+  }
+
+  .component__states-container {
+    width: 70%;
+  }
+}

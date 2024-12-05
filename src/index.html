@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <title>Design System</title>
+  </head>
+  <body>
+    <main>
+      <div class="tabs">
+        <!--Titles Structure-->
+        <div class="tabs__title-container">
+          <button class="tabs__title tabs__title-active">Button</button>
+          <button class="tabs__title">Accordion</button>
+          <button class="tabs__title">Checkbox</button>
+          <button class="tabs__title">Navigation Bar</button>
+          <button class="tabs__title">Card</button>
+          <button class="tabs__title">Picture</button>
+          <button class="tabs__title">Text Area</button>
+          <button class="tabs__title">Switch</button>
+        </div>
+
+        <!--Tabs Description-->
+        <div class="tabs__content-container">
+          <!--Buttons Compoment-->
+          <article class="tabs__content tabs__content-active">
+            <div class="tabs__component-container">
+              <h1>Button</h1>
+              <p>
+                Button component displayed in different states. 
+              </p>
+              <h3>Different States</h3>
+            </div>
+            <div class="tabs__component-states">
+              <span class="component__states-container">
+                <p>Default</p>
+                <button class="button__component-states button__component-states-default">Click</button>
+              </span>
+              <span class="component__states-container">
+                <p>Hover</p>
+                <button class="button__component-states button__component-states-hover" >Click</button>
+              </span>
+              <span class="component__states-container">
+                <p>Disabled</p>
+                <button class="button__component-states button__component-states-disabled">Click</button>
+              </span>
+               </div>
+          </article>
+
+          <!---------------->
+          <!--Accordion Compoment-->
+          <article class="tabs__content tabs__content-active">
+            <div class="tabs__component-container">
+              <h1>Accordion</h1>
+              <p>
+                Accordion component displayed in different states.
+              </p>
+              <h3>Different States</h3>
+            </div>
+            <!-- First Accordion -->
+             <span class="accordion__container">
+              <p>Default</p>
+            <div class="accordion accordion__default--state">
+              <div class="accordion__title-container">
+                <h4 class="accordion__title">Lorem ipsum</h4>
+                <button class="accordion__toggle-button">
+                  <i class="fa-solid fa-arrow-down fa-xl accordion__toggle-logo"></i>
+                </button>
+              </div>
+              <div class="accordion__description-container">
+                <p class="accordion__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </p>
+              </div>
+            </div>
+            </span>
+
+             <!-- Second Accordion -->
+            <span class="accordion__container">
+              <p>Open</p>
+            <div class="accordion accordion__open--state">
+              <div class="accordion__title-container">
+                <h4 class="accordion__title">Lorem ipsum</h4>
+                <button class="accordion__toggle-button">
+                  <i class="fa-solid fa-arrow-down fa-xl accordion__toggle-logo"></i>
+                </button>
+              </div>
+              <div class="accordion__description-container">
+                <p class="accordion__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            </span>
+
+              <!-- Third Accordion -->
+            <span class="accordion__container">
+              <p>Disabled</p>
+            <div class="accordion accordion__disabled--state">
+              <div class="accordion__title-container accordion__title-container-disabled">
+                <h4 class="accordion__title">Lorem ipsum</h4>
+                <button class="accordion__toggle-button">
+                  <i class="fa-solid fa-arrow-down fa-xl accordion__toggle-logo"></i>
+                </button>
+              </div>
+              <div class="accordion__description-container">
+                <p class="accordion__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            </span>
+          </article>
+
+          <!--Checkbox Component-->
+          <article class="tabs__content tabs__content-active">
+            <div class="tabs__component-container">
+                <h1>Checkbox</h1>
+                <p>Checkbox component displayed in different states.</p>
+                <h3>Different States</h3>
+            </div>
+
+            <div class="tabs__component-states">
+                <span class="component__states-container component__states-container-checkbox">
+                    <div class="checkbox__component checkbox__component--default">
+                        <p>Default</p>
+                        <input type="checkbox" name="checkbox" id="checkbox" class="checkbox__input checkbox__input--default">
+                    </div>
+
+                    <div class="checkbox__component checkbox__component--hover">
+                        <p>Hover</p>
+                        <input type="checkbox" name="checkbox" id="checkbox" class="checkbox__input checkbox__input--hover">
+                    </div>
+
+                    <div class="checkbox__component checkbox__component--disabled">
+                        <p>Disabled</p>
+                        <input type="checkbox" name="checkbox" id="checkbox" class="checkbox__input checkbox__input--disabled">
+                    </div>
+                </span>
+            </div>
+          </article>
+
+          <!--Navbar Component-->
+          <article class="tabs__content tabs__content-active">
+            <div class="tabs__component-container">
+              <h1>Navigation Bar</h1>
+              <p>
+                Navbar component displayed in different states. 
+              </p>
+              <h3>Different States</h3>
+            </div>
+            <!------------------------>
+            <div class="tabs__component-states">
+                <span class="component__states-container">
+                    <p>Default</p>
+                    <nav class="navbar">
+                        <!--Navbar Logo-->
+                        <div class="navbar__logo-container">
+                        <a href="#">
+                            <img
+                            src="../src/assets/icons/logosymbol.png"
+                            alt="Main logo"
+                            class="navbar__logo"
+                            />
+                        </a>
+                        </div>
+                        <!--Navbar Links------------------------------------------>
+                        <div class="navbar__links-container">
+                        <ul class="navbar__links navbar__links-default">
+                            <li class="navbar__link navbar__link-active">
+                            <a href="#">Link One</a>
+                            </li>
+                            <li class="navbar__link"><a href="#">Link Two</a></li>
+                            <li class="navbar__link"><a href="#">Link Three</a></li>
+                        </ul>
+                        </div>
+                    </nav>
+                </span>
+                <span class="component__states-container">
+                    <p>Hover</p>
+                    <nav class="navbar">
+                        <!--Navbar Logo-->
+                        <div class="navbar__logo-container">
+                        <a href="#">
+                            <img
+                            src="../src/assets/icons/logosymbol.png"
+                            alt="Main logo"
+                            class="navbar__logo"
+                            />
+                        </a>
+                        </div>
+                        <!--Navbar Links------------------------------------------>
+                        <div class="navbar__links-container">
+                        <ul class="navbar__links navbar__links-hover">
+                            <li class="navbar__link navbar__link-active">
+                            <a href="#">Link One</a>
+                            </li>
+                            <li class="navbar__link"><a href="#">Link Two</a></li>
+                            <li class="navbar__link"><a href="#">Link Three</a></li>
+                        </ul>
+                        </div>
+                    </nav>
+                </span> 
+            </div>
+          </article>
+          
+          <!--Card Compoment-->
+          <article class="tabs__content tabs__content-active">
+            <div class="tabs__component-container">
+              <h1>Card</h1>
+              <p>
+                Card component displayed in different states. 
+              </p>
+              <h3>Different States</h3>
+            </div>
+            <div class="tabs__component-states">
+                <span class="component__states-container">
+                    <p>Default</p>
+                    <div class="card__component card__component--default">
+                        <div class="card__component-content">
+                        <h3>Card</h3>
+                        <ul>
+                            <li>Info</li>
+                            <li>Info</li>
+                            <li>Info</li>
+                        </ul>
+                        <p>Card description.</p>
+                        </div>
+                    </div>
+                </span>
+                <span class="component__states-container">
+                    <p>Hover</p>
+                    <div class="card__component card__component--hover">
+                        <div class="card__component-content">
+                        <h3>Card</h3>
+                        <ul>
+                            <li>Info</li>
+                            <li>Info</li>
+                            <li>Info</li>
+                        </ul>
+                        <p>Card description.</p>
+                        </div>
+                    </div>
+            </div>
+          </article>
+
+          <!--Picture Component-->
+          <article class="tabs__content tabs__content-active">
+            <div class="tabs__component-container">
+              <h1>Picture</h1>
+              <p>
+                Picture component displayed in different states. 
+              </p>
+              <h3>Different States</h3>
+            </div>
+            <div class="tabs__component-states">
+                <span class="component__states-container component__states-container-img">
+                    <div class="picture__component picture__component--default">
+                         <p>Default</p>
+                    <img src="./assets/images/flower.jpg" alt="Picture Component Default">
+                    </div>
+                    <div class="picture__component picture__component--hover">
+                        <p>Hover</p>
+                    <img src="./assets/images/flower.jpg" alt="Picture Component Hover">
+                    <div class="caption">Image Caption.</div>
+                    </div>
+                </span>
+            </div>
+          </article>
+
+          <!--Text Area Component-->
+          <article class="tabs__content tabs__content-active">
+            <div class="tabs__component-container">
+                <h1>Text Area</h1>
+                <p>Text Area displayed in different states.</p>
+                <h3>Different States</h3>
+            </div>
+
+
+            <div class="tabs__component-states">
+                <span class="component__states-container component__states-container-text">
+                    <div class="text__component text__component--default">
+                        <p>Default</p>
+                        <input type="text" name="text" id="text" class=" text__input text__input--default">
+                    </div>
+
+                    <div class="text__component text__component--hover">
+                        <p>Hover</p>
+                        <input type="text" name="text" id="text" class="text__input text__input--hover">
+                    </div>
+
+                    <div class="text__component text__component--disabled">
+                        <p>Disabled</p>
+                        <input type="text" name="text" id="text" class="text__input text__input--disabled">
+                    </div>
+                </span>
+            </div>
+          </article>
+
+          <!--Switch Component-->
+          <article class="tabs__content tabs__content-active">
+            <div class="tabs__component-container">
+              <h1>Toggle Switch</h1>
+              <p>
+                Switch component displayed in different states. 
+              </p>
+              <h3>Different States</h3>
+            </div>
+            <div class="tabs__component-states">
+                <span class="component__states-container">
+                    <div class="switch__component switch__component--default">
+                         <p>Default</p>
+                         <div class="switch__component--container">
+                            <input type="checkbox" id="check-default">
+                            <label for="check-default" class="switch__component--button"></label>
+                         </div>
+                    </div>
+                    <div class="switch__component switch__component--hover">
+                        <p>Hover</p>
+                        <div class="switch__component--container">
+                            <input type="checkbox" id="check-hover">
+                            <label for="check-hover" class="switch__component--button"></label>
+                         </div>
+                    </div>
+                </span>
+            </div>
+          </article>
+        </div>
+    </main>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
