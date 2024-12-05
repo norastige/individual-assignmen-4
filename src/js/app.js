@@ -22,20 +22,6 @@ titleContainers.forEach((title, index) => {
   });
 });
 
-// Loading Page - Hide Inactive Pages
-// document.addEventListener("DOMContentLoaded", () => {
-//   const tabContents = document.querySelectorAll(".tabs__content");
-
-//   // Aktiver riktig tab
-//   tabContents.forEach((content) => {
-//     if (content.classList.contains("tabs__content--active")) {
-//       content.style.display = "block";
-//     } else {
-//       content.style.display = "none";
-//     }
-//   });
-// });
-
 // Loop that iterates through the tab titles and the tab content
 tabTitleButtons.forEach((tabButton, index) => {
   tabButton.addEventListener("click", (e) => {

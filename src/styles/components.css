@@ -366,6 +366,13 @@ input#check-hover:checked + .switch__component--button::before {
   }
 }
 
+@media screen and (max-width: 584px) {
+  .picture__component {
+    width: 100%;
+    height: 60%;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .accordion {
     width: 100%;
@@ -417,7 +424,7 @@ input#check-hover:checked + .switch__component--button::before {
   }
 
   .card__component {
-    width: 100%;
+    width: 120%;
   }
 
   .picture__component {
