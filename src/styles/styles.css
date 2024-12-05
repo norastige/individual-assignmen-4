@@ -61,7 +61,7 @@ h3 {
   color: var(--text-color);
 }
 
-.tabs__title-active {
+.tabs__title--active {
   background-color: var(--color-background);
 }
 
@@ -76,11 +76,9 @@ h3 {
 
 .tabs__content {
   display: none;
-  visibility: hidden;
 }
 
-.tabs__content-active {
-  visibility: visible;
+.tabs__content--active {
   display: block;
   width: 100%;
   height: 100%;

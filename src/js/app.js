@@ -23,33 +23,33 @@ titleContainers.forEach((title, index) => {
 });
 
 // Loading Page - Hide Inactive Pages
-document.addEventListener("DOMContentLoaded", () => {
-  const tabContents = document.querySelectorAll(".tabs__content");
+// document.addEventListener("DOMContentLoaded", () => {
+//   const tabContents = document.querySelectorAll(".tabs__content");
 
-  // Aktiver riktig tab
-  tabContents.forEach((content) => {
-    if (content.classList.contains("tabs__content-active")) {
-      content.style.visibility = "visible";
-    } else {
-      content.style.display = "none";
-    }
-  });
-});
+//   // Aktiver riktig tab
+//   tabContents.forEach((content) => {
+//     if (content.classList.contains("tabs__content--active")) {
+//       content.style.display = "block";
+//     } else {
+//       content.style.display = "none";
+//     }
+//   });
+// });
 
 // Loop that iterates through the tab titles and the tab content
 tabTitleButtons.forEach((tabButton, index) => {
   tabButton.addEventListener("click", (e) => {
     tabContents.forEach((content) =>
-      content.classList.remove("tabs__content-active")
+      content.classList.remove("tabs__content--active")
     );
 
     tabTitleButtons.forEach((button) =>
-      button.classList.remove("tabs__title-active")
+      button.classList.remove("tabs__title--active")
     );
 
-    e.target.classList.add("tabs__title-active");
+    e.target.classList.add("tabs__title--active");
 
-    tabContents[index].classList.add("tabs__content-active");
+    tabContents[index].classList.add("tabs__content--active");
   });
 });
 
