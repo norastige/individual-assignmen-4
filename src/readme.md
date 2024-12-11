@@ -22,16 +22,6 @@ managing a design system, focusing on reusable UI components and their various
 states. You will design and implement a design system consisting of a minimum of
 8 components (or up to 10 if you prefer), with each component showcasing its
 different states.
-You have the flexibility to choose from a wide range of components. For example:
-• Buttons
-• Cards
-• Modals
-• Dropdowns
-• Navigation Bars
-• Alerts
-• Tooltips
-• Toast
-• Accordions
 
 ## Usage Instructions.
 
@@ -77,5 +67,5 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Links
 
-    - GitHub Repository:
+    - GitHub Repository: https://github.com/norastige/individual-assignmen-4.git
     - Netlify Deployment:
